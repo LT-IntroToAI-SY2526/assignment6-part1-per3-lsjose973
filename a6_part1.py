@@ -51,7 +51,7 @@ def create_scatter_plot(data):
     plt.figure(figsize=(10,6))
     # TODO: Create a scatter plot with Hours on x-axis and Scores on y-axis
     #       Use color='purple' and alpha=0.6
-    plt.scatter(data['Hours', data['Score']], color='green', alpha=0.6)
+    plt.scatter(data['Hours'], data['Scores'], color='purple', alpha=0.6)
     # TODO: Add x-axis label: 'Hours Studied'
     plt.xlabel('Hours Studied', fontsize=12)
     # TODO: Add y-axis label: 'Test Score'
