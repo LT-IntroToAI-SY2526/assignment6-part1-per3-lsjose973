@@ -171,8 +171,8 @@ def visualize_results(X_train, y_train, X_test, y_test, predictions, model):
     y_range = model.predict(X_range)
     plt.plot(X_range, y_range, color='black', linewidth=2, label='Line of Best Fit')
     # TODO: Add x-axis label, y-axis label, and title
-    plt.xlabel('Temperature (°F)', fontsize=12)
-    plt.ylabel('Ice Cream Sales ($)', fontsize=12)
+    plt.xlabel('Hours Studied', fontsize=12)
+    plt.ylabel('Test Scores', fontsize=12)
     plt.title('Linear Regression: Student Test Scores Prediction', fontsize=14, fontweight='bold')
     # TODO: Add legend
     plt.legend()

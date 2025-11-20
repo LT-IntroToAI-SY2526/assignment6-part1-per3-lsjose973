@@ -11,9 +11,7 @@
 What does the R² score tell you about your model? What does it mean if R² is close to 1? What if it's close to 0?
 
 **YOUR ANSWER:**
-
-
-
+The R² score tells us how well the data is explained by the model we created. In the context of this assignment, the R² value would represent how well the test score that a student received correlates with the amount of hours they studied. If the R² value is close to 1, it means that the model explains the data very well (meaning that the two variables have a strong correlation), and if the R² value is close to 0, it means that the the data isn't explained well by the model. This means that the two variables are likely unrelated, meaning that there's no correlation. 
 
 ---
 
@@ -21,9 +19,7 @@ What does the R² score tell you about your model? What does it mean if R² is c
 What does the MSE (Mean Squared Error) mean in plain English? Why do you think we square the errors instead of just taking the average of the errors?
 
 **YOUR ANSWER:**
-
-
-
+The Mean Squared Error gives us an average of how inaccurate our model is when predicting values. A lower MSE is better than a high MSE because it means that on average, our model predicts values closer to the actual value. There are two main reasons as to why we square the errors instead of just taking the average. One reason is to make sure all of the errors are positive; if the errors were both negative and positive, they would cancel out and lead to a very low MSE even it's supposed to be high. The other reason that we square the errors is to punish bigger mistakes instead of every mistake. For example if your error is small, like 1, the square of 1 is only 1. But if your error is bigger like 10, the square of that becomes 100.
 
 ---
 
