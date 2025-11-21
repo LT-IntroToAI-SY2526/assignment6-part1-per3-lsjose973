@@ -201,7 +201,7 @@ def make_prediction(model, hours):
     predicted_scores = model.predict(temp_array)[0]
     # TODO: Print the prediction with a clear message
     print(f"\n=== New Prediction ===")
-    print(f"If hours studied is {hours}°F, predicted score: ${predicted_scores:.2f}")
+    print(f"If hours studied is {hours}, predicted score: %{predicted_scores:.2f}")
     # TODO: Return the predicted score
     return predicted_scores
 

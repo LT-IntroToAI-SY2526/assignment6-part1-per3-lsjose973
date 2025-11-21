@@ -29,10 +29,7 @@ Would you trust this model to predict a score for a student who studied 10 hours
 - What happens when you make predictions outside the range of your training data?
 
 **YOUR ANSWER:**
-
-
-
-
+I don't think I would trust this model to predict a score for a student who studied 10 hours. This is because the maximum hours in my dataset is 9.6 hours, and although it's close to 10, 10 is still outside of the data range. If I were to try and predict a score for a data outside of the range that it was trained on, the data would be an extrapolation of the model. 
 ---
 
 ## Part 2: Data Analysis
@@ -44,7 +41,7 @@ Looking at your scatter plot, describe the relationship between hours studied an
 - Positive or negative?
 
 **YOUR ANSWER:**
-
+The relationship is fairly strong. Although there is some variation, most of the data points cluster around the line of best fit. Additionally, the trend seems to form a linear line with a positive slope, indicating that the two variables have a positive correlation. This means that as the hours spent studying increases, the test score that a student receives increases as well.
 
 
 
@@ -54,9 +51,9 @@ Looking at your scatter plot, describe the relationship between hours studied an
 What are some real-world factors that could affect test scores that this model doesn't account for? List at least 3 factors.
 
 **YOUR ANSWER:**
-1. 
-2. 
-3. 
+1. Sleep -- even if a person studied a lot, for example pulling an all nighte before the exam, they could be tired while taking the exam leading to a worsened performance.
+2. Test Anxiety -- some people are more anxious than others when it comes to taking tests, so even if some people studied more, people with lower hours spent studying could score higher because they are less anxious when they take tests.
+3. Studying efficiency -- there are various methods of studying, with some being objectively better than others. in the data set, there are bound to be some people who are able to study for less hours than others, but score higher because they are more efficient when they are studing. 
 
 
 ---
@@ -67,22 +64,18 @@ What are some real-world factors that could affect test scores that this model d
 Why do we split our data into training and testing sets? What would happen if we trained and tested on the same data?
 
 **YOUR ANSWER:**
-
-
-
-
+We split our data into training and testing sets because we want to see if the model we create is actually generalizable and useable. The training set is used to teach the model how to predict data, and the testing set is used to see if the model we create is actually accurate. If we trained and tested on the same data, the model would perform better than it actually should, giving a false sense of accuracy. Instead of learning how to actually see the pattern in the data trends, it instead memorizes the different points. If we tried to predict a score for an hour that wasn't on the data we tested and trained on, it would product a result that is more inaccurate than it actually should be.
 ---
 
 ### Question 7: Most Challenging Part
 What was the most challenging part of this assignment for you? How did you overcome it (or what help do you still need)?
 
 **YOUR ANSWER:**
-
+I think the most challenging part of this assignment was understanding why we put the independant variable as a list. I began to understand it after we went over it in class, as I now know that there could be graphs where there are multiple independant variables. For example, in the context of this assignment we could have put Hours Studied, Hours Slept, etc, because these are all factors that influence the test scores. 
 
 
 
 ---
-
 ## Part 4: Extending Your Learning
 
 ### Question 8: Future Applications
@@ -92,7 +85,7 @@ Describe one real-world problem you could solve with linear regression. What wou
 - **Why this relationship might be linear:**
 
 **YOUR ANSWER:**
-
+One real-world problem that I could solve with linear regression would likely be the amount of calories burned in a day based on how much exercise you do. My independant X values could be time spent running, time spent walking, time spent doing yoga, etc. My dependant Y value would be the amount of calories burned. I think that this relationship would be linear because the amount of calories you burn tends to increase proportionally with how much cardio you do. The amount of calories you burn on average in the first 10 minutes of exercising is the same amount of calories you burn on average in a 10 minute interval later in the same  session (ex: 30-40 mins).
 
 
 
@@ -101,11 +94,11 @@ Describe one real-world problem you could solve with linear regression. What wou
 ## Grading Checklist (for your reference)
 
 Before submitting, make sure you have:
-- [ ] Completed all functions in `a6_part1.py`
-- [ ] Generated and saved `scatter_plot.png`
-- [ ] Generated and saved `predictions_plot.png`
-- [ ] Answered all questions in this writeup with thoughtful responses
-- [ ] Pushed all files to GitHub (code, plots, and this writeup)
+- [X] Completed all functions in `a6_part1.py`
+- [X] Generated and saved `scatter_plot.png`
+- [X] Generated and saved `predictions_plot.png`
+- [X] Answered all questions in this writeup with thoughtful responses
+- [X] Pushed all files to GitHub (code, plots, and this writeup)
 
 ---
 
